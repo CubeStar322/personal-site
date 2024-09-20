@@ -6,10 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Навички</title>
 </head>
-<body class="body-about">
-
-
-
+<body>
 <nav class="nav">
     <a href="index.html" class="nav-link">Головна</a>
     <a href="about.html" class="nav-link">Про мене</a>
@@ -22,12 +19,12 @@
     </header>
     <section class="layout">
         <div class="container">
-            <div class="photo"><img src="иди спать.png" alt="" width="500" height="500"></div>
-            <div class="content">Content</div>
-            <div class="content">Content</div>
-            <div class="content">Content</div>
-            <div class="content">Content</div>
-            <div class="content">Content</div>
+            <div class="photo"><img src="иди спать.png" alt="" width="700" height="700"></div>
+            <div class="content">JavaScript (часто скорочують як JS) — це мова програмування, що використовується для створення динамічного та інтерактивного  контенту на веб-сторінках. Вона дозволяє розробникам реалізовувати різноманітні функції, такі як анімації, обробка подій, валідація форм,  і багато іншого. JS може виконуватися на стороні клієнта (у браузері) та на стороні сервера (з використанням таких платформ, як Node.js). </div>
+            <div class="content">CSS (Cascading Style Sheets) — це мова стилів, яка використовується для опису вигляду і форматування веб-сторінок. CSS дозволяє  задавати кольори, шрифти, розміри, відступи, вирівнювання та інші візуальні характеристики HTML-елементів.</div>
+            <div class="content">HTML (HyperText Markup Language) — це стандартна мова розмітки для створення веб-сторінок.HTML є основою веб-розробки, і він часто  використовується разом з CSS і JavaScript для створення інтерактивних і стильних веб-сторінок. </div>
+            <div class="content">C — це одна з найпопулярніших і найвпливовіших мов програмування, розроблена в 1970-х роках. Вона є мову низького рівня, що надає можливість програмістам працювати з апаратним забезпеченням та системними ресурсами.</div>
+            <div class="content">C++ — це мова програмування, розроблена на основі C, яка додає підтримку об'єктно-орієнтованого програмування (ООП). Вона була створена в 1980-х роках і швидко стала популярною завдяки своїй гнучкості та потужності.</div>
         </div>
     </section>
         <h2 class="header">Навички</h2>
@@ -91,7 +88,7 @@
     .photo {
         grid-column: 1 /  2;
         grid-row: 1 / 4;
-        background-color: #4678D8;
+        background-color: rgb(29, 23, 110);
         color: white;
         display: flex;
         justify-content: center;
@@ -107,6 +104,12 @@
         align-items: center;
         text-align: center;
         border: 1px solid #ccc;
+        color: white;
+        height: 200px; 
+        width: 900px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    
     }
 
     .photo, .content {
