@@ -36,14 +36,17 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #3b0a9d; 
-}
+    transform: translateY(-5px);
+    box-shadow: 15px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  }
 .header {
     background-color: #4e14df;
     color: white;
     padding: 20px;
     text-align: center;
+    flex-grow: 1;
 }
+
 .photo {
     display: inline-block; 
 }
@@ -51,12 +54,11 @@ body {
     flex-grow: 1;
     padding: 20px;
 }
-.contact-info {
-    margin: 0;
-}
+
 .contact-email,
-.contact-phone {
-    margin: 5px 0;
+.contact-phone,.contact-info {
+    margin: 10px 0px 0px 0px;
+    
 }
 .meta
 {
