@@ -73,3 +73,19 @@ body {
 {
     padding-top: 10px;
 }
+.dotted-line {
+    border: none;
+    border-top: 4px dotted #43d330;
+    height: 2px;
+    margin: 25px 0;
+}
+.intro-text-index
+{
+    background-color: #ff0000;
+}
+/*Успадкування означає, що деякі CSS-властивості автоматично передаються від батьківського елемента до дочірніх. Наприклад, властивість color успадковується.
+body{
+            color: blue;  Успадковується 
+            font-family: Arial, sans-serif;
+    }*/
+       
