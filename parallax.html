@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <style>
+        /* Стиль для хедера */
+        header {
+            background-color: #1c2833;
+            color: #f5f6fa;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        /* Основний стиль секцій */
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5em;
+            text-align: center;
+            color: #1c2833;
+            background-color: #f8f9f9;
+        }
+
+        /* Ефект паралаксу для фонових зображень */
+        .parallax {
+            background-image: url('gory_ozero_pejzazh_79398_1920x1080.jpg');
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ff4757;
+        }
+
+        /* Основні стилі для сторінки */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+            background-color: #121212;
+            overflow-x: hidden;
+        }
+
+        /* Стилізація для контенту секцій */
+        .content {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        /* Відключення паралаксу на мобільних і планшетах */
+        @media (max-width: 1024px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+
+        /* Стилізація для навігації */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #f5f6fa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ff6b6b;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Хедер з навігацією -->
+    <header>
+        <h1>Parallax Effect</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Головна</a></li>
+                <li><a href="about.html" class="nav-link">Про автора</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+                <li><a href="skills.html" class="nav-link">Навички</a></li>
+                <li><a href="parallax.html" class="nav-link">Паралакс</a></li>
+                <li><a href="responsive-flex.html" class="nav-link">Flex-сторінка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Перша секція з ефектом паралаксу -->
+    <div class="parallax">
+        <div class="content">Ефект паралаксу</div>
+    </div>
+
+    <!-- Звичайна секція без паралаксу -->
+    <div class="section" style="background-color: #2980b9;">
+        <div class="content">Секція без паралаксу</div>
+    </div>
+
+    <!-- Друга секція з ефектом паралаксу -->
+    <div class="parallax">
+        <div class="content">Секція з паралаксом</div>
+    </div>
+
+    <!-- Кінцева секція -->
+    <div class="section" style="background-color: #c0392b;">
+        <div class="content">Кінцева секція</div>
+    </div>
+
+</body>
+</html>
